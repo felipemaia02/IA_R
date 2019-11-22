@@ -1,0 +1,512 @@
+y= c(63024,71509,66929,25561),
+type = "bar",
+name = "Contrato de Indicação de bolsista")%>%
+add_trace(y=c(9346,11779,14673,7779),
+type = "bar",
+name = "Contrato inicial de solicitação")%>%
+add_trace(y=c(836, 444, 260, 130),
+type = "bar",
+name = "Alteração de Vigência")%>%
+add_trace(y=c(22, 33, 34, 28),
+type = "bar",
+name = "Contrato de Cooperação Técnica")%>%
+add_trace(y=c(3389, 3282, 1530, 369),
+type = "bar",
+name = "Prorrogação")
+p6
+p6 <- plot_ly(x = c("2016","2017","2018","2019"),
+y= c(63024,71509,66929,25561),
+type = "bar",
+name = "Contrato de Indicação de bolsista")%>%
+add_trace(y=c(9346,11779,14673,7779),
+type = "bar",
+name = "Contrato inicial de solicitação")%>%
+add_trace(y=c(836, 444, 260, 130),
+type = "bar",
+name = "Alteração de Vigência")%>%
+add_trace(y=c(22, 33, 34, 28),
+type = "bar",
+name = "Contrato de Cooperação Técnica")%>%
+add_trace(y=c(3389, 3282, 1530, 369),
+type = "bar",
+name = "Prorrogação")
+p6
+View(file)
+library(readxl)
+library(plotly)
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar"
+) %>% add_contour(showlines = FALSE)
+library(readxl)
+library(plotly)
+file <- read_xlsx("PQ_historico_pagamento_regiao_nivel.xlsx")[0:11]
+grande_area <- as.data.frame(table(file$`Grande Área`))
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar"
+) %>% add_contour(showlines = FALSE)
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar"
+) %>% add_contour(showlines = FALSE)
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar"
+)
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar"
+) %>%
+add_contour(showlines = FALSE)
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar",
+showlines = FALSE
+)
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar",
+color = ~clarity
+)
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar",
+color = ~grande_area
+)
+p
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "Grande Área",
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = grande_area$Var1,
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = ""
+type = "bar",
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+name = "",
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq)
+type = "bar",
+p
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq)
+type = "bar",
+p <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+type = "bar",
+color = ~grande_area$Var1
+)
+p
+p
+bolsas_ano <- as.data.frame(table(file$...1))
+View(bolsas_ano)
+g <- plot_ly(
+x = grande_area$Var1,
+y = c(grande_area$Freq),
+type = "bar",
+color = ~grande_area$Var1
+)
+g
+library(readxl)
+library(plotly)
+file <- read_xlsx("PQ_historico_pagamento_regiao_nivel.xlsx")[0:11]
+grande_area <- as.data.frame(table(file$`Grande Área`))
+bolsas_ano <- as.data.frame(table(file$...1))
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = red
+)
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = "red"
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = "pink"
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+marker = list(color = 'rgb(49,130,189)'
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+marker = list(color = 'rgb(49,130,189)',
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+marker = list(color = 'rgb(49,130,189)',
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+marker = list(color = 'rgb(49,130,189)',
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+marker = list(color = "rgb(49,130,189)"
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+marker = list(color = "rgb(49,130,189)",
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+marker = list(color = "rgb(49,130,189)")
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = I("red")
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = I(~bolsas_ano$Var1)
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = 'rgb(26, 118, 255)'
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = 'rgb(55, 83, 109)'
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = '#0d51d8'
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = "#0d51d8"
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = I("#0d51d8")
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = I("082C82")
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = I("082c82")
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = I("#082c82")
+)
+b
+b <- plot_ly(
+x = bolsas_ano$Var1,
+y = c(bolsas_ano$Freq),
+type = "bar",
+color = I("#0d51d8")
+)
+b
+install.packages("h2o")
+library(h2o)
+setwd("~/Trabalho/Cane")
+base = read.csv("cane.csv")
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+base$X = NULL
+View(base)
+base$block = NULL
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+base$X = NULL
+base$block = factor(base$block, levels = unique(base$block), labels = c(1,2, 3, 4))
+typeof(base$block)
+base[,1:4] = scale(base[, 1:4])
+summary(base)
+set.seed(1)
+divisao = sample.split(base$block, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+classificador = naiveBayes(x = base_treinamento[-5], y = base_treinamento$block)
+previsoes = predict(classificador, newdata = base_teste[-5])
+matriz_confusao = table(base_teste[, 5], previsoes)
+confusionMatrix(matriz_confusao)
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+base$block = factor(base$block, levels = unique(base$block), labels = c(1,2, 3, 4))
+base$X = NULL
+base[,3:4] = scale(base[, 3:4])
+base[,1] = scale(base[, 1])
+base[,3:5] = scale(base[, 3:5])
+base$block = factor(base$block, levels = unique(base$block), labels = c(1,2, 3, 4))
+base[,3:5] = scale(base[, 3:5])
+base$block = as.numeric(base$block)
+base[,3:5] = scale(base[, 3:5])
+base$n = as.numeric(base$n)
+set.seed(1)
+divisao = sample.split(base$r, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+classificador = naiveBayes(x = base_treinamento[-2], y = base_treinamento$r)
+previsoes = predict(classificador, newdata = base_teste[-2])
+matriz_confusao = table(base_teste[, 2], previsoes)
+confusionMatrix(matriz_confusao)
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+base$X = NULL
+base$block = factor(base$block, levels = unique(base$block), labels = c(1,2, 3, 4))
+base[,1:4] = scale(base[, 1:4])
+set.seed(1)
+divisao = sample.split(base$block, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+classificador = naiveBayes(x = base_treinamento[-5], y = base_treinamento$block)
+previsoes = predict(classificador, newdata = base_teste[-5])
+matriz_confusao = table(base_teste[, 5], previsoes)
+confusionMatrix(matriz_confusao)
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+#nconsistentes
+base$block = factor(base$block, levels = unique(base$block), labels = c(1,2, 3, 4))
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+set.seed(1)
+divisao = sample.split(base$block, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+#sem pre-processamento
+classificador = naiveBayes(x = base_treinamento[-6], y = base_treinamento$block)
+previsoes = predict(classificador, newdata = base_teste[-6])
+matriz_confusao = table(base_teste[, 6], previsoes)
+confusionMatrix(matriz_confusao)
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+base$X = NULL
+base[,1:4] = scale(base[, 1:4])
+set.seed(1)
+divisao = sample.split(base$block, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+classificador = naiveBayes(x = base_treinamento[-5], y = base_treinamento$block)
+previsoes = predict(classificador, newdata = base_teste[-5])
+matriz_confusao = table(base_teste[, 5], previsoes)
+confusionMatrix(matriz_confusao)
+library(e1071)
+library(caret)
+library(caTools)
+base = read.csv("cane.csv")
+base$X = NULL
+#nconsistentes
+base$block = factor(base$block, levels = unique(base$block), labels = c(1,2, 3, 4))
+#escalonamento
+base[,1:4] = scale(base[, 1:4])
+set.seed(1)
+divisao = sample.split(base$block, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+View(base)
+classificador = rpart(formula = block ~., data = base_treinamento)
+previsoes = predict(classificador, newdata = base_teste[-5])
+previsoes = predict(classificador, newdata = base_teste[-5], type = 'class')
+matriz_confusao = table(base_teste[, 5], previsoes)
+library(caTools)
+library(rpart)
+library(rpart.plot)
+library(lattice)
+library(caret)
+library(e1071)
+base = read.csv("cane.csv")
+base$X = NULL
+#nconsistentes
+base$block = factor(base$block, levels = unique(base$block), labels = c(1,2, 3, 4))
+#escalonamento
+base[,1:4] = scale(base[, 1:4])
+set.seed(1)
+divisao = sample.split(base$block, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+#com pre-processamento
+classificador = rpart(formula = block ~., data = base_treinamento)
+previsoes = predict(classificador, newdata = base_teste[-5])
+matriz_confusao = table(base_teste[, 5], previsoes)
+previsoes = predict(classificador, newdata = base_teste[-5], type = 'class')
+matriz_confusao = table(base_teste[, 5], previsoes)
+print(classificador)
+plot(classificador)
+rpart.plot(classificador)
+library(caTools)
+library(rpart)
+library(rpart.plot)
+library(lattice)
+library(caret)
+library(e1071)
+install.packages("rpart.plot")
+rpart.plot(classificador)
+install.packages("rpart")
+install.packages("rpart")
+install.packages("rpart")
+install.packages("rpart")
+install.packages("rpart.plot")
+install.packages("rpart.plot")
+library(caTools)
+library(rpart)
+library(rpart.plot)
+library(lattice)
+library(caret)
+library(e1071)
+rpart.plot(classificador)
+library(caTools)
+library(rpart)
+library(rpart.plot)
+library(lattice)
+library(caret)
+library(e1071)

@@ -1,0 +1,148 @@
+install.packages('tools')
+install.packages("tools")
+install.packages("tools")
+install.packages("tools")
+install.packages("stringr")
+install.packages("methods")
+install.packages("jsonlite")
+install.packages("jsonlite")
+install.packages("knite")
+install.packages("knitr")
+install.packages("rmarkdown")
+install.packages("plotly")
+getOption("repos")
+install.packages("stringr")
+install.packages("knitr")
+install.packages("rmarkdown")
+devtools::install_url("http://cran.r-project.org/src/contrib/rmarkdown0.5.1.tar.gz")
+getOption("repos")
+install.packages("devtools")
+devtools::install_github("rstudio/rmarkdown")
+install.packages("base64enc", type="binary")
+install.packages("jsonlite", type="binary")
+install.packages("jsonlite", type = "binary")
+install.packages("jsonlite", type = "binary")
+devtools::install_github("rstudio/rmarkdown")
+library(rmarkdown)
+library(markdown)
+detach("package:markdown", unload = TRUE)
+getOption("repos")
+update.packages()
+update.packages()
+update.packages()
+update.packages()
+update.packages("stringr")
+update.packages("kintr")
+install.packages("rmarkdown")
+library(rmarkdown)
+detach("package:rmarkdown", unload = TRUE)
+update.packages()
+setwd("~/Faculdade/IA/Trabalho")
+install.packages(c("caret", "caTools", "randomForest"))
+install.packages(c("caret", "caTools"))
+install.packages("h2o")
+library(e1071)
+library(caret)
+library(caTools)
+library(caTools)
+library(h2o)
+library(caret)
+h2o.init(nthreads = -1)
+#pegando a base de dados
+base = read.csv("HI.csv")
+#Tirando valores, apenas utilizar se for fazer prÃ©-processamento
+base$X = NULL
+base$hhi = NULL
+base$whi = NULL
+base$hhi2 = NULL
+base$wght = NULL
+base$education = NULL
+base$region = NULL
+#inconsistentes
+base$whrswk = ifelse(base$whrswk <= 0, mean(base$whrswk), base$whrswk)
+base$experience = ifelse(base$whrswk <= 0, mean(base$whrswk), base$whrswk)
+#fatoramento
+base$race = factor(base$race, levels = unique(base$race), labels = c(1,2,3))
+base$hispanic = factor(base$hispanic, levels = unique(base$hispanic), labels = c(1,2))
+#escalonamento
+base[,1] = scale(base[,1])
+base[,4:7] = scale(base[,4:7])
+base$whrswk= as.numeric(base$whrswk)
+base$race = as.numeric(base$race)
+base$hispanic = as.numeric(base$hispanic)
+base$experience = as.numeric(base$experience)
+base$kidslt6 = as.numeric(base$kidslt6)
+base$kids618 = as.numeric(base$kids618)
+base$husby = as.numeric(base$husby)
+#Fazendo as divisÃµes das bases
+set.seed(1)
+divisao = sample.split(base$race, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+summary(base)
+classificador = h2o.deeplearning( y = 'race',
+training_frame = as.h2o(base_treinamento),
+activation = 'Rectifier',
+hidden = c(80, 160),
+epochs = 1000)
+#com pre-processamento
+previsoes = h2o.predict(classificador, newdata = as.h2o(base_teste[-2]))
+#sem pre-processamento
+previsoes = h2o.predict(classificador, newdata = as.h2o(base_teste[-7]))
+previsoes = (previsoes > 0.5)
+previsoes = as.vector(previsoes)
+predicted = previsoes
+reference = base_teste[, 2]
+u = union(reference, predicted)
+matriz_confusao <- table(factor(predicted, u), factor(reference, u))
+print(matriz_confusao)
+confusionMatrix(matriz_confusao)
+#pegando a base de dados
+base = read.csv("HI.csv")
+View(base)
+base$X = NULL
+base$hhi = NULL
+base$whi = NULL
+base$hhi2 = NULL
+base$wght = NULL
+base$education = NULL
+base$region = NULL
+#inconsistentes
+base$whrswk = ifelse(base$whrswk <= 0, mean(base$whrswk), base$whrswk)
+base$experience = ifelse(base$whrswk <= 0, mean(base$whrswk), base$whrswk)
+base$race = factor(base$race, levels = unique(base$race), labels = c(1,2,3))
+base$hispanic = factor(base$hispanic, levels = unique(base$hispanic), labels = c(1,2))
+base[,1] = scale(base[,1])
+base[,4:7] = scale(base[,4:7])
+base$whrswk= as.numeric(base$whrswk)
+base$race = as.numeric(base$race)
+base$hispanic = as.numeric(base$hispanic)
+base$experience = as.numeric(base$experience)
+base$kidslt6 = as.numeric(base$kidslt6)
+base$kids618 = as.numeric(base$kids618)
+base$husby = as.numeric(base$husby)
+set.seed(1)
+divisao = sample.split(base$race, SplitRatio = 0.75)
+base_treinamento = subset(base, divisao == TRUE)
+base_teste = subset(base, divisao == FALSE)
+summary(base)
+i
+classificador = h2o.deeplearning( y = 'race',
+training_frame = as.h2o(base_treinamento),
+activation = 'Rectifier',
+hidden = c(80, 160),
+epochs = 1000)
+#com pre-processamento
+previsoes = h2o.predict(classificador, newdata = as.h2o(base_teste[-2]))
+previsoes = (previsoes > 0.5)
+previsoes = as.vector(previsoes)
+predicted = previsoes
+reference = base_teste[, 2]
+u = union(reference, predicted)
+matriz_confusao <- table(factor(predicted, u), factor(reference, u))
+print(matriz_confusao)
+confusionMatrix(matriz_confusao)
+setwd("~/Faculdade/IA/Trabalho/Titanic")
+base = read.csv("Titanic.csv")
+View(base)
+summary(base)
