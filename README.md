@@ -1,2 +1,2 @@
-# IA_R
+# IA WITH R
 Work done by educational means
